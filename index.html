@@ -355,7 +355,6 @@ Sole Gameplay Programmer
 <li>Item Definition</li>
 <li>Item Instance</li>
 <li>Item Fragment</li>
-<li>Equipment Support</li>
 <li>Modular Architecture</li>
 </ul>
 
@@ -376,21 +375,21 @@ Sole Gameplay Programmer
 <div class="card">
 <h3>Input Buffer</h3>
 <p>
-Lưu trữ input trong thời gian animation lock nhằm tránh mất combo và cải thiện cảm giác điều khiển.
+Caches player inputs during animation locks to prevent dropped combos and improve control responsiveness.
 </p>
 </div>
 
 <div class="card">
 <h3>Combat Architecture</h3>
 <p>
-Thiết kế combat theo hướng component-based, event-driven và dễ mở rộng.
+Architected a modular combat system using a component-based approach, decoupling damage handling, hit detection, and combat states via event-driven messaging.
 </p>
 </div>
 
 <div class="card">
 <h3>Custom Ability System</h3>
 <p>
-Hệ thống ability nhẹ phục vụ action RPG với gameplay tags và trạng thái gameplay.
+Implements a lightweight, data-driven and event-driven ability system utilizing Gameplay Tags for efficient state management and combat logic in an action RPG context
 </p>
 </div>
 
