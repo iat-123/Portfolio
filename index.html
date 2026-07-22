@@ -201,15 +201,20 @@ section{
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 30px;
-    align-items: start;
+    align-items: stretch;
     margin-top: 25px;
 }
 
 .code-text-content {
     background: var(--panel2);
-    padding: 25px;
+    padding: 30px 25px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 100%;
 }
 
 .code-images-wrapper {
@@ -248,7 +253,7 @@ section{
 .code-text-content li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: var(--muted);
 }
 
@@ -479,18 +484,21 @@ Implements a lightweight, data-driven and event-driven ability system utilizing 
 <div class="code-showcase-container">
     <!-- Left Column: Description & Benefits -->
     <div class="code-text-content">
-        <p>
-            Exposes combat events through an interface instead of directly exposing delegates. This allows Blueprint systems to subscribe to gameplay events while keeping combat components fully encapsulated and decoupled.
-        </p>
-        <br>
-        <span class="highlight-title">Key Benefits</span>
-        <ul>
-            <li>Blueprint-friendly API</li>
-            <li>No direct component dependency</li>
-            <li>Delegate implementation remains private</li>
-            <li>Easier to extend with new gameplay systems</li>
-            <li>Suitable for modular plugins</li>
-        </ul>
+        <div>
+            <p>
+                Exposes combat events through an interface instead of directly exposing delegates. This allows Blueprint systems to subscribe to gameplay events while keeping combat components fully encapsulated and decoupled.
+            </p>
+        </div>
+        <div>
+            <span class="highlight-title">Key Benefits</span>
+            <ul>
+                <li>Blueprint-friendly API</li>
+                <li>No direct component dependency</li>
+                <li>Delegate implementation remains private</li>
+                <li>Easier to extend with new gameplay systems</li>
+                <li>Suitable for modular plugins</li>
+            </ul>
+        </div>
     </div>
 
     <!-- Right Column: Code Images -->
@@ -500,6 +508,9 @@ Implements a lightweight, data-driven and event-driven ability system utilizing 
         </div>
         <div class="code-showcase">
             <img data-basename="codeexample_2" alt="Event Binding Code Example 2" loading="lazy">
+        </div>
+        <div class="code-showcase">
+            <img data-basename="codeexample_3" alt="Event Binding Code Example 3" loading="lazy">
         </div>
     </div>
 </div>
